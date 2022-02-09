@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_user"
+    app:startDestination="@id/redFragment2"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/redFragment2"
+        android:name="com.example.navgraphforarafat.RedFragment"
+        android:label="fragment_red"
+        tools:layout="@layout/fragment_red" >
+        <action
+            android:id="@+id/action_redFragment2_to_blueFragment2"
+            app:destination="@id/blueFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/blueFragment2"
+        android:name="com.example.navgraphforarafat.BlueFragment"
+        android:label="fragment_blue"
+        tools:layout="@layout/fragment_blue" />
+</navigation>
